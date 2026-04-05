@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>root@portfolio:~</title>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            margin: 0;
+            line-height: 1.6;
+        }
+        .prompt { color: #00ff00; font-weight: bold; }
+        .command { color: #ffffff; }
+        .output { color: #a8a8a8; margin-bottom: 20px; margin-left: 10px;}
+        a { color: #00ff00; text-decoration: none; border-bottom: 1px solid #00ff00; }
+        a:hover { background-color: #00ff00; color: #000; }
+        .blink { animation: blinker 1s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="prompt">root@portfolio:~$</span> <span class="command">whoami</span>
+        <div class="output">
+            Name: [Your Name]<br>
+            Role: 1st Year CPGE Student & Offensive Security Enthusiast<br>
+            HTB Rank: Hacker (Top 2600 Global)
+        </div>
+
+        <span class="prompt">root@portfolio:~$</span> <span class="command">cat skills.txt</span>
+        <div class="output">
+            - Network Reconnaissance & Enumeration<br>
+            - Web Application Pentesting (OWASP Top 10)<br>
+            - Privilege Escalation (Linux/Windows)<br>
+            - Scripting (Python, Bash)
+        </div>
+
+        <span class="prompt">root@portfolio:~$</span> <span class="command">ls -la projects/</span>
+        <div class="output">
+            drwxr-xr-x 2 root root 4096 Apr  5 14:00 <a href="[LINK TO RECON SCRIPT REPO]">LazyRecon-Automator</a><br>
+            drwxr-xr-x 2 root root 4096 Apr  5 15:00 <a href="[LINK TO REV SHELL REPO]">Payload-Gen</a><br>
+            -rw-r--r-- 1 root root 8192 Apr  5 16:00 <a href="[LINK TO HTB WRITEUP]">HTB_Writeup.md</a>
+        </div>
+
+        <span class="prompt">root@portfolio:~$</span> <span class="command">netstat -an | grep CONNECT</span>
+        <div class="output">
+            tcp 0 0 127.0.0.1:4444 [YOUR IP]:443 ESTABLISHED<br>
+            LinkedIn: <a href="[YOUR LINKEDIN URL]" target="_blank">linkedin.com/in/yourprofile</a><br>
+            GitHub: <a href="https://github.com/soukascript" target="_blank">github.com/soukascript</a>
+        </div>
+        <span class="prompt">root@portfolio:~$</span> <span class="blink">_</span>
+    </div>
+</body>
+</html>
